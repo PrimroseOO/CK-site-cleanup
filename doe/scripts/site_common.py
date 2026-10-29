@@ -16,7 +16,7 @@ SITE_ROOT = TOOLS_DIR.parent.parent
 # Folders, written relative to the site root
 EXAMPLE_FOLDERS = ["doc/examples", "chugl/examples"]  # every .ck in these is searchable
 PAGE_FOLDERS = ["doc/examples"]                       # pages are made here (chugl pages come from another script)
-LEFT_OUT_FOLDERS = ["legacy"]                         # never read, edited or searched
+LEFT_OUT_FOLDERS = ["legacy", "smuck"]                         # never read, edited or searched
 SEARCH_FOLDER = "search"                              # the search page and the indexes the scripts write
 
 # Folders that hold no real pages: left out of link fixing and site search
