@@ -1,0 +1,9 @@
+# Examples that should NOT get a web page. One per line; the .ck is optional.
+#
+#   test          any file called test.ck, in any folder
+#   basic/test    only basic/test.ck
+#   serial/       everything in a folder called serial
+#
+# Ignored examples stay searchable; they link to the .ck file instead.
+# After editing, run update_site.py. It removes their old pages and points
+# links back at the .ck.
