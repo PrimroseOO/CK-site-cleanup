@@ -373,7 +373,16 @@
                         found.push({ kind: "example", example, ranges, hits, pathHit, expanded: false });
                     }
                 }
+                // sort Z-A for first folder for path in json 'doc/example'
                 found.sort((a, b) => {
+                    // prioritize the basic folders 
+                    const priorities = ["doc/examples/basic", "chugl/examples/basic"];
+                    for (const priority of priorities ) {
+                        let aPriority= a.example.full.startsWith(priority);
+                        let bPriority= b.example.full.startsWith(priority);
+                        if (aPriority !== bPriority) return aPriority ? -1 : 1;
+                    };
+
                     const partsA = a.example.full.split("/");
                     const partsB = b.example.full.split("/");
                     const folderCompare = partsB[0].localeCompare(partsA[0]);
