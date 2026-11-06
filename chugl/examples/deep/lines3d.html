@@ -108,13 +108,13 @@
     <script type="module">
       import ChuGL from 'https://cdn.jsdelivr.net/npm/webchugl/+esm';
 
-      const CHUCK_FILE = "../deep/lines3d.ck";
+      const CHUCK_FILE = "./lines3d.ck";
       const VFS_PATH = "/deep/lines3d.ck";
       const ASSETS = JSON.parse('[]');
 
       // WebChucK IDE build with WebChuGL support (opened with ?engine=webchugl below).
       // TODO: switch to https://chuck.stanford.edu/ide/ once WebChuGL support is released upstream
-      const IDE_URL = 'https://ccrma.stanford.edu/~hoangben/webchuck-ide/';
+      const IDE_URL = 'https://chuck.stanford.edu/ide/';
 
       const editor = newChuckEditor(document.getElementById("editor"), "// loading " + CHUCK_FILE + "...");
 
@@ -295,7 +295,7 @@
         </div>
 
         <button id="openInIDE">=&gt; <em>to WebChucK IDE</em></button>
-        <button id="download" data-href="../deep/lines3d.ck">Download .ck</button>
+        <button id="download" data-href="./lines3d.ck">Download .ck</button>
 
         <button id="action">
             Play

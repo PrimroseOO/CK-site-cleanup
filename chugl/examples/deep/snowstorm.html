@@ -108,13 +108,13 @@
     <script type="module">
       import ChuGL from 'https://cdn.jsdelivr.net/npm/webchugl/+esm';
 
-      const CHUCK_FILE = "../deep/snowstorm.ck";
+      const CHUCK_FILE = "./snowstorm.ck";
       const VFS_PATH = "/deep/snowstorm.ck";
       const ASSETS = JSON.parse('[{"url":"../data/textures/snowflake1.png","path":"/data/textures/snowflake1.png"},{"url":"../data/textures/snowflake2.png","path":"/data/textures/snowflake2.png"},{"url":"../data/textures/snowflake3.png","path":"/data/textures/snowflake3.png"},{"url":"../data/textures/snowflake4.png","path":"/data/textures/snowflake4.png"},{"url":"../data/textures/snowflake5.png","path":"/data/textures/snowflake5.png"},{"url":"../data/textures/snowflake6.png","path":"/data/textures/snowflake6.png"}]');
 
       // WebChucK IDE build with WebChuGL support (opened with ?engine=webchugl below).
       // TODO: switch to https://chuck.stanford.edu/ide/ once WebChuGL support is released upstream
-      const IDE_URL = 'https://ccrma.stanford.edu/~hoangben/webchuck-ide/';
+      const IDE_URL = 'https://chuck.stanford.edu/ide/';
 
       const editor = newChuckEditor(document.getElementById("editor"), "// loading " + CHUCK_FILE + "...");
 
@@ -295,7 +295,7 @@
         </div>
 
         <button id="openInIDE">=&gt; <em>to WebChucK IDE</em></button>
-        <button id="download" data-href="../deep/snowstorm.ck">Download .ck</button>
+        <button id="download" data-href="./snowstorm.ck">Download .ck</button>
 
         <button id="action">
             Play

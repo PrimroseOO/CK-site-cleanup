@@ -108,13 +108,13 @@
     <script type="module">
       import ChuGL from 'https://cdn.jsdelivr.net/npm/webchugl/+esm';
 
-      const CHUCK_FILE = "../basic/skybox.ck";
+      const CHUCK_FILE = "./skybox.ck";
       const VFS_PATH = "/basic/skybox.ck";
       const ASSETS = JSON.parse('[{"url":"../data/textures/bridge/negx.jpg","path":"/basic/bridge/negx.jpg"},{"url":"../data/textures/bridge/negy.jpg","path":"/basic/bridge/negy.jpg"},{"url":"../data/textures/bridge/negz.jpg","path":"/basic/bridge/negz.jpg"},{"url":"../data/textures/bridge/posx.jpg","path":"/basic/bridge/posx.jpg"},{"url":"../data/textures/bridge/posy.jpg","path":"/basic/bridge/posy.jpg"},{"url":"../data/textures/bridge/posz.jpg","path":"/basic/bridge/posz.jpg"}]');
 
       // WebChucK IDE build with WebChuGL support (opened with ?engine=webchugl below).
       // TODO: switch to https://chuck.stanford.edu/ide/ once WebChuGL support is released upstream
-      const IDE_URL = 'https://ccrma.stanford.edu/~hoangben/webchuck-ide/';
+      const IDE_URL = 'https://chuck.stanford.edu/ide/';
 
       const editor = newChuckEditor(document.getElementById("editor"), "// loading " + CHUCK_FILE + "...");
 
@@ -295,7 +295,7 @@
         </div>
 
         <button id="openInIDE">=&gt; <em>to WebChucK IDE</em></button>
-        <button id="download" data-href="../basic/skybox.ck">Download .ck</button>
+        <button id="download" data-href="./skybox.ck">Download .ck</button>
 
         <button id="action">
             Play
