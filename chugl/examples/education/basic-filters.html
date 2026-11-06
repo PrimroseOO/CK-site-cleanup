@@ -111,9 +111,9 @@
   <script type="module">
     import ChuGL from 'https://cdn.jsdelivr.net/npm/webchugl/+esm';
 
-      const CHUCK_FILE = "./basic-filters.ck";
-      const VFS_PATH = "/education/basic-filters.ck";
-      const ASSETS = JSON.parse('[]');
+    const CHUCK_FILE = "./basic-filters.ck";
+    const VFS_PATH = "/education/basic-filters.ck";
+    const ASSETS = JSON.parse('[]');
 
       // WebChucK IDE build with WebChuGL support (opened with ?engine=webchugl below).
       // TODO: switch to https://chuck.stanford.edu/ide/ once WebChuGL support is released upstream
@@ -292,23 +292,9 @@
 <body>
   <header class="button-grid">
 
-        <button id="openInIDE">=&gt; <em>to WebChucK IDE</em></button>
-        <button id="download" data-href="./basic-filters.ck">Download .ck</button>
-
-        <button id="action">
-            Play
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-play"
-                viewBox="0 0 16 16">
-                <path
-                    d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z">
-                </path>
-            </svg>
-        </button>
-
-    </header>
-
-    <div class="canvas-container">
-        <canvas id="canvas" aria-hidden="true"></canvas>
+    <div class="leftText">
+      <h2><span id="title" style="font-weight: bold">basic-filters</span></h2>
+      <div id="author" style="font-style: italic;">ChucK Development Team</div>
     </div>
 
     <button id="openInIDE">=&gt; <em>to WebChucK IDE</em></button>
