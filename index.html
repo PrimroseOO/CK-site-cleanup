@@ -55,7 +55,7 @@
         <!-- Version Container -->
         <div class="outlineDiv" style="width: 333px">
             <div><a href="doc/authors.html">ChucK Team</a> | 2003 =&gt; now</div>
-            <div>latest version: <a href="release/">1.5.5.8</a> (chai)</div>
+            <div>latest version: <a href="release/">1.5.5.9</a> (chai)</div>
             <div class="small-text">(<a href="release/VERSIONS">What's new?</a>)</div>
         </div>
 
@@ -109,7 +109,7 @@
 
         <div class="grid-container" style="align-content: start; margin-bottom: 0.5rem;">
             <div class="outlineDiv button" style="padding: 0;">
-                <a style="padding: 4px 12px;" href="/search/">Search ChucK</a>
+                <a style="padding: 4px 12px;" href="./search/">Search ChucK</a>
             </div>
             <!-- Definition -->
             <div class="outlineDiv" style="margin-bottom: 1rem;">
@@ -122,7 +122,7 @@
                     <button type="button" data-random-example data-folder="basic">Random basic example</button> -->
                     <span id="random-example-status" class="random-example-status" role="status"
                         aria-live="polite"></span>
-                    <noscript><a href="/search/">Search the examples</a></noscript>
+                    <noscript><a href="./search/">Search the examples</a></noscript>
                 </a>
             </div>
         </div>
@@ -132,7 +132,7 @@
                 "use strict";
  
                 // ---- Settings ------------------------------------------------------
-                const EXAMPLES_URL = "/search/examples.json"; // the examples index, the same file the search page uses
+                const EXAMPLES_URL = "./search/examples.json"; // the examples index, the same file the search page uses
                 const ONLY_WITH_PAGE = true;    // only pick examples that have a web page to play; false also allows .ck-only ones
                 const REMEMBER = 20;            // don't repeat any of the last this-many picks (kept per browser tab)
                 const INDEX_VERSION = 2;        // must match build_search_index.py
@@ -215,7 +215,7 @@
                             }
                             const full = fullPath(chosen);
                             remember(full);
-                            const url = "/" + encodePath(chosen.page ? full.replace(/\.ck$/i, ".html") : full);
+                            const url = "./" + encodePath(chosen.page ? full.replace(/\.ck$/i, ".html") : full);
                             statusEl.textContent = `Opening ${full}…`;
                             // Pages can listen for this event and cancel it to handle the address themselves
                             const proceed = button.dispatchEvent(new CustomEvent("random-example", {
